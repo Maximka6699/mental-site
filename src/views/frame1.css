@@ -1,0 +1,818 @@
+.frame1-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.frame1-frame1 {
+  width: 100%;
+  height: 4241px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(218, 231, 250, 1);
+}
+.frame1-frame {
+  top: 40px;
+  left: 380px;
+  width: 1160px;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-burgermenu {
+  top: 29px;
+  left: 1020px;
+  width: 80px;
+  height: 42px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame1-rectangle4 {
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 4px;
+  position: absolute;
+}
+.frame1-rectangle6 {
+  top: 38px;
+  left: 0px;
+  width: 80px;
+  height: 4px;
+  position: absolute;
+}
+.frame1-rectangle5 {
+  top: 19px;
+  left: 20px;
+  width: 60px;
+  height: 4px;
+  position: absolute;
+}
+.frame1-logo {
+  top: 27px;
+  left: 60px;
+  width: 140px;
+  height: 47.34741973876953px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame1-vector {
+  top: 0.004583928734064102px;
+  left: 0px;
+  width: 83px;
+  height: 47px;
+  position: absolute;
+}
+.frame1-vector1 {
+  top: -1.0537775096963742e-8px;
+  left: 90.44520568847656px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+.frame1-vector2 {
+  top: 16.71327781677246px;
+  left: 83.03092956542969px;
+  width: 28px;
+  height: 31px;
+  position: absolute;
+}
+.frame1-vector3 {
+  top: -1.0537775096963742e-8px;
+  left: 110.89692687988281px;
+  width: 29px;
+  height: 47px;
+  position: absolute;
+}
+.frame1-text {
+  top: 39px;
+  left: 288px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-text02 {
+  top: 39px;
+  left: 440px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text04 {
+  top: 39px;
+  left: 843px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text06 {
+  top: 39px;
+  left: 683px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-frame1 {
+  gap: 25px;
+  top: 292px;
+  left: 622px;
+  width: 676px;
+  height: 116px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+}
+.frame1-text08 {
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 96px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text10 {
+  top: 93px;
+  left: 131.5px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-mentalhealth {
+  top: 960px;
+  left: 380px;
+  width: 1160px;
+  height: 480px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text12 {
+  top: 217px;
+  left: 440px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame4 {
+  gap: 29px;
+  top: 339px;
+  left: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.frame1-text14 {
+  color: rgba(31, 31, 31, 1);
+  width: 220px;
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text16 {
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-mentalhealth1 {
+  top: 2160px;
+  left: 380px;
+  width: 1160px;
+  height: 480px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text18 {
+  top: 217px;
+  left: 334px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame41 {
+  gap: 29px;
+  top: 409px;
+  left: 509.5px;
+  width: 141px;
+  height: 11px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.frame1-text20 {
+  left: 12px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-mentalhealth2 {
+  top: 2660px;
+  left: 380px;
+  width: 1160px;
+  height: 480px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text22 {
+  top: 217px;
+  left: 386px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame42 {
+  gap: 29px;
+  top: 409px;
+  left: 509.5px;
+  width: 141px;
+  height: 11px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.frame1-text24 {
+  left: 12px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-mentalhealth3 {
+  top: 3340px;
+  left: 381px;
+  width: 1160px;
+  height: 640px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(31, 31, 31, 1);
+}
+.frame1-basemesh {
+  top: 1480px;
+  left: 380px;
+  width: 560px;
+  height: 480px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text26 {
+  top: 217px;
+  left: 172px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame5 {
+  gap: 29px;
+  top: 354px;
+  left: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.frame1-text28 {
+  color: rgba(31, 31, 31, 1);
+  width: 220px;
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text30 {
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-assos {
+  top: 1480px;
+  left: 980px;
+  width: 560px;
+  height: 480px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text32 {
+  top: 217px;
+  left: 194px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame6 {
+  gap: 29px;
+  top: 354px;
+  left: 60px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.frame1-text34 {
+  color: rgba(31, 31, 31, 1);
+  width: 220px;
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text36 {
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-text38 {
+  top: 2009px;
+  left: 870px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-text40 {
+  top: 3189px;
+  left: 870px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+.frame1-text42 {
+  left: 438px;
+  color: rgb(255, 255, 255);
+  width: 592px;
+  bottom: 295px;
+  height: auto;
+  position: absolute;
+  font-size: 71px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-image3dv21 {
+  top: 3427px;
+  left: 1049.6552734375px;
+  width: 430px;
+  height: 467px;
+  position: absolute;
+}
+.frame1-group11 {
+  top: 3427px;
+  left: 1049.6552734375px;
+  width: 141.65518188476562px;
+  height: 141.65518188476562px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame1-ellipse3 {
+  top: 0px;
+  left: 0px;
+  width: 142px;
+  height: 142px;
+  position: absolute;
+}
+.frame1-frameiconinstagram {
+  top: 33.17243957519531px;
+  left: 33.17233657836914px;
+  width: 75.62930297851562px;
+  height: 75.62930297851562px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame1-vector4 {
+  top: 21.0078182220459px;
+  left: 21.008060455322266px;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+}
+.frame1-vector5 {
+  top: 0px;
+  left: 0px;
+  width: 76px;
+  height: 76px;
+  position: absolute;
+}
+.frame1-vector6 {
+  top: 14.70171070098877px;
+  left: 60.92350769042969px;
+  width: 0px;
+  height: 1px;
+  position: absolute;
+}
+.frame1-group12 {
+  top: 3621.5517578125px;
+  left: 1338.3447265625px;
+  width: 141.65518188476562px;
+  height: 141.65518188476562px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame1-ellipse4 {
+  top: 0px;
+  left: 0px;
+  width: 142px;
+  height: 142px;
+  position: absolute;
+}
+.frame1-frameicontelegram {
+  top: 41.2413330078125px;
+  left: 26.00005340576172px;
+  width: 75.62930297851562px;
+  height: 59.70734405517578px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame1-vector7 {
+  top: 0px;
+  left: 0px;
+  width: 76px;
+  height: 60px;
+  position: absolute;
+}
+.frame1-text48 {
+  top: 2086px;
+  left: 739px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text50 {
+  top: 3266px;
+  left: 736px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 48px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Neue Machina;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame2 {
+  top: 520px;
+  left: 380px;
+  width: 260px;
+  height: 400px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text52 {
+  top: 20px;
+  left: 140px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text54 {
+  top: 369px;
+  left: 20px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame3 {
+  top: 520px;
+  left: 680px;
+  width: 260px;
+  height: 400px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text56 {
+  top: 20px;
+  left: 140px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text58 {
+  top: 369px;
+  left: 20px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame4 {
+  top: 520px;
+  left: 980px;
+  width: 260px;
+  height: 400px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text60 {
+  top: 20px;
+  left: 140px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text62 {
+  top: 369px;
+  left: 20px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-frame5 {
+  top: 520px;
+  left: 1280px;
+  width: 260px;
+  height: 400px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-text64 {
+  top: 20px;
+  left: 140px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-text66 {
+  top: 369px;
+  left: 20px;
+  color: rgba(31, 31, 31, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Neue Machina;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}

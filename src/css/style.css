@@ -1,0 +1,385 @@
+@import url("/src/fonts/stylesheet.css")
+
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+body{
+    color: #202020;
+    background-color: #DAE7FA;
+    font-family: 'Neue Machina';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*СТИЛИ ХЭДЭРА НАЧАЛО*/
+
+.wrapper{
+    max-width: 1160px;
+    max-height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1160px;
+    height: 100px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 48px rgba(91, 91, 91, 0.07));
+    z-index: 1;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 25px;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item{
+    margin-left: 60px;
+}
+.header_link{
+    font-family: Neue Machina;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    color: #202020; /* Цвет текста ссылки */
+    text-decoration: none;
+}
+/* это стили при наведении, фокусе и клике 
+анимация подчеркивания кароче. да я это сделал*/
+.header_link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Выставляем подчеркивание на расстояние от текста (можно настроить по вашему усмотрению) */
+    width: 100%;
+    height: 2px; /* Толщина подчеркивания (можно настроить по вашему усмотрению) */
+    background-color: #202020; /* Цвет подчеркивания */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; /* Плавная анимация исчезновения */
+  }
+  
+  /* Анимация при наведении курсора */
+  .header_link:hover::before {
+    transform: scaleX(1);
+}
+
+.header_burger{
+    margin-left: 60px;
+}
+
+/*СТИЛИ ХЭДЭРА КОНЕЦ*/
+
+/*ПЕРВЫЙ ЭКРАН НАЧАЛО*/
+
+.intro{
+    /* height: 1080;
+    width:100vh; */
+    min-height: 100vh;
+    min-width: 100vh;
+    padding-top: 292px;
+    /* padding-left: 622px; */
+    /* background: #DAE7FA; */
+}
+
+.title{
+    color: #202020;
+    font-family: 'Neue Machina';
+    font-size: 96px;
+    font-weight: bold;
+    height: 68px;
+    width: 676px; 
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.subtitle{
+    color: #202020;
+    text-align: center;
+    font-family: 'Neue Machina';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+.wrapper_grid4 {
+    max-width: 1160px;
+    margin: 40px auto 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Две колонки равной ширины */
+    gap: 40px; /* Отступ между элементами */
+  }
+
+.rectangle{
+    width: 260px;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    /* background-image: url('path/to/your/image.jpg'); */
+    background-color: #fff;
+    /* background-size: cover;  */
+    /* Масштабируем изображение по размеру прямоугольника */
+    /* background-position: center;  */
+    /* Располагаем изображение по центру прямоугольника */
+    /* position: relative;  */
+    /* Для позиционирования текста относительно прямоугольника */
+    filter: drop-shadow(0px 0px 48px rgba(91, 91, 91, 0.07));
+    /* margin: 20px; */
+    z-index: 0;
+}
+  
+  .top-text, .bottom-text {
+    position: absolute;
+    color: #202020;
+    text-align: center;
+    font-family: 'Neue Machina';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* margin: 20px; */
+  }
+  
+  .top-text {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .bottom-text {
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .wrapper_grid2 {
+    max-width: 1160px;
+    margin: 40px auto 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки равной ширины */
+    gap: 40px; /* Отступ между элементами */
+  }
+  
+  .big_rect, .mid_rect {
+    width: 100%;
+    height: 480px;
+    border-radius: 10px;
+    background-color: #ffffff; /* Цвет фона прямоугольника */
+    color: #202020; /* Цвет текста */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 48px rgba(91, 91, 91, 0.07));
+    /* padding: 20px; */
+  }
+  .big_rect{
+    width: 1160px;
+  }
+  .mid_rect{
+    width: 560px;
+  }
+  
+  .block_name {
+    font-family: 'Neue Machina';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 0; /* Убираем отрицательный отступ */
+  }
+  
+  .link_group {
+    color: #202020;
+    font-family: 'Neue Machina';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    width: 220px;
+  }
+  
+.description{
+    margin-bottom: 30px;
+}
+
+  .smooth-underline {
+    position: relative;
+    color: #202020; /* Цвет текста ссылки */
+    text-decoration: none;
+    font-family: 'Neue Machina';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .smooth-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Выставляем подчеркивание на расстояние от текста (можно настроить по вашему усмотрению) */
+    width: 100%;
+    height: 2px; /* Толщина подчеркивания (можно настроить по вашему усмотрению) */
+    background-color: #202020; /* Цвет подчеркивания */
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out; /* Плавная анимация исчезновения */
+  }
+  
+  .smooth-underline:hover::before {
+    transform: scaleX(0);
+  }
+/*ПЕРВЫЙ ЭКРАН КОНЕЦ*/
+
+/* FOR USER */
+.for_user{
+    margin-bottom: 100px;
+}
+.title2{
+    color: #202020;
+    font-family: 'Neue Machina';
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.wrapper_grid2v {
+    max-width: 1160px;
+    max-height: auto;
+    margin: 40px auto;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* Две линии равной ширины */
+    gap: 20px; /* Отступ между элементами */
+    position: relative;
+  }
+
+.link_cont_center{
+    position: absolute;
+    bottom: 60px;
+}
+
+
+/* .footer{
+    background-color: #202020;
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.footer_img{
+    position: absolute;
+    top: 50%;
+    left: 50vh;
+    align-items: center;
+} */
+  
+  .footer {
+    background-color: #202020; /* Цвет фона футера */
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto; /* 4 колонки равной ширины */
+    gap: 60px; /* Отступ между колонками */
+  }
+  
+  .column {
+    color: #fff; /* Цвет текста */
+  }
+  
+  .svg {
+    fill: #fff;
+    width: 260px;
+    height: 148.584px;  
+  }
+  svg{
+    fill: #fff;
+  }
+  
+  /* h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  } */
+  .footer-text-b{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Neue Machina;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .footer-text-d{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Neue Machina;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 5px;
+  }
+
+  .smooth-underlinew {
+    position: relative;
+    color: #ffffff; /* Цвет текста ссылки */
+    text-decoration: none;
+  }
+  .smooth-underlinew::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Выставляем подчеркивание на расстояние от текста (можно настроить по вашему усмотрению) */
+    width: 100%;
+    height: 2px; /* Толщина подчеркивания (можно настроить по вашему усмотрению) */
+    background-color: #ffffff; /* Цвет подчеркивания */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; /* Плавная анимация исчезновения */
+  }
+  
+  .smooth-underlinew:hover::before {
+    transform: scaleX(1);
+  }
+
+  

@@ -31,9 +31,20 @@ img{
     align-items: center;
     flex-direction: column;
     margin-bottom: 100px;
+    gap: 40px;
 }
 
-.header{
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px;
+}
+
+.obj-margin-t{
+  margin-top: 25px;
+}
+
+/* .header{
     background-color: rgb(255, 255, 255);
     position: fixed;
     top: 25px;
@@ -44,23 +55,8 @@ img{
     border-radius: 10px;
     filter: drop-shadow(0px 0px 48px rgba(91, 91, 91, 0.07));
     z-index: 1;
-}
-.header_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 25px;
-}
-.header_list{
-    display: flex;
-    flex-wrap: wrap;
-}
-.header_item{
-    margin-left: 60px;
-}
+} */
+
 .header_link{
     font-family: Neue Machina;
     font-size: 24px;
@@ -88,10 +84,6 @@ img{
   /* Анимация при наведении курсора */
   .header_link:hover::before {
     transform: scaleX(1);
-}
-
-.header_burger{
-    margin-left: 60px;
 }
 
 /*СТИЛИ ХЭДЭРА КОНЕЦ*/
@@ -226,10 +218,11 @@ img{
     bottom: 60px;
     left: 60px;
     width: 220px;
+    gap: 30px;
   }
   
 .description{
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
   .smooth-underline {
@@ -289,97 +282,9 @@ img{
 }
 
 
-/* .footer{
-    background-color: #202020;
-    width: 100%;
-    height: 450px;
-    position: relative;
-}
 
-.footer_img{
-    position: absolute;
-    top: 50%;
-    left: 50vh;
-    align-items: center;
-} */
-  
-  .footer {
-    background-color: #202020; /* Цвет фона футера */
-    padding: 40px;
-    display: grid;
-    grid-template-columns: auto auto auto auto; /* 4 колонки равной ширины */
-    gap: 60px; /* Отступ между колонками */
-  }
-  
-  .column {
-    color: #fff; /* Цвет текста */
-  }
-  
-  .svg {
-    fill: #fff;
-    width: 260px;
-    height: 148.584px;  
-  }
-  svg{
-    fill: #fff;
-  }
-  
-  /* h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 5px;
-  } */
-  .footer-text-b{
-    color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Neue Machina;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 10px;
-  }
 
-  .footer-text-d{
-    color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Neue Machina;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 5px;
-  }
-
-  .smooth-underlinew {
-    position: relative;
-    color: #ffffff; /* Цвет текста ссылки */
-    text-decoration: none;
-  }
-  .smooth-underlinew::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px; /* Выставляем подчеркивание на расстояние от текста (можно настроить по вашему усмотрению) */
-    width: 100%;
-    height: 2px; /* Толщина подчеркивания (можно настроить по вашему усмотрению) */
-    background-color: #ffffff; /* Цвет подчеркивания */
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out; /* Плавная анимация исчезновения */
-  }
+/* FOOTER START */
   
-  .smooth-underlinew:hover::before {
-    transform: scaleX(1);
-  }
 
-  
+  /* FOOTER END */

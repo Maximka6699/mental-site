@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Neue Machina';
+  src: local('Neue Machina Regular'), local('NeueMachina-Regular'),
+      url('../../fonts/NeueMachina-Regular.woff2') format('woff2'),
+      url('../../fonts/NeueMachina-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Стили для карточки товара */
+.product-card {
+    position: relative;
+    width: 260px;
+    height: 400px;
+    border-radius: 10px;
+    /* background-image: url("путь_к_фоновому_изображению"); */
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(0px 0px 48px rgba(91, 91, 91, 0.07));
+  }
+  
+
+.collection, .product-info{
+    position: absolute;
+    color: #202020;
+    text-align: center;
+    font-family: 'Neue Machina';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+  .collection {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .product-info {
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .titleCard {
+    display: flex;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .product-card:hover .titleCard {
+    transform: translateY(-30px);
+  }
+  
+  /* Стили для кнопок при наличии товара */
+  .buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+    transition: 0.3s ease-in-out;
+    transform: translateY(40px);
+    opacity: 0;
+    padding: 0;
+  }
+  
+  .buttons.hovered {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .add-to-cart, .add-to-favorites {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Neue Machina';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    padding: 0;
+  }
+  .add-to-cart{
+    width: 160px;
+    height: 40px;
+  }
+  .add-to-favorites{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .add-to-cart {
+    background-color: #202020;
+  }
+  
+  .add-to-favorites {
+    background-color: #202020;
+  }
+  
+  .add-to-favorites span {
+    margin-right: 5px;
+  }
+  
+  /* Стили для информации при отсутствии товара */
+  .not-available {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+    font-family: 'Neue Machina';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.3s ease-in-out;
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  
+  .not-available.hovered {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  

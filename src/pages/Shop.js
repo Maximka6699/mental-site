@@ -15,7 +15,7 @@ const Shop = () => {
                 <div className="grid-container">
                     {/* <!-- Ваши карточки товаров, например: --> */}
                     {cards.map((shopcard)=>{
-                        return (<ShopCard title={shopcard.title} collection={shopcard.collection} style={shopcard.style} available={shopcard.available} />)
+                        return (<ShopCard key={shopcard.id} coast={shopcard.coast} title={shopcard.title} collection={shopcard.collection} style={shopcard.style} available={shopcard.available} />)
                     })}
                     
                     {/* <!-- ... Добавьте карточки товаров по необходимости ... --> */}

@@ -44,12 +44,12 @@
   
   .titleCard {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     transition: 0.3s ease-in-out;
   }
 
   .product-card:hover .titleCard {
-    transform: translateY(-30px);
+    transform: translateY(-45px);
   }
   
   /* Стили для кнопок при наличии товара */

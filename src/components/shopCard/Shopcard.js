@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css'; // Подключите стили для карточки
 
-const ShopCard = ({ title, collection, style, available }) => {
+const ShopCard = ({ title, collection, style, available, coast }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -20,7 +20,8 @@ const ShopCard = ({ title, collection, style, available }) => {
     >
       <div className="collection">{collection}</div>
       <div className="product-info">
-        <div className="titleCard">&lt;{title} &amp; {style}&gt; </div>
+        <div className="titleCard">{title} | {style} style </div>
+        <div className="titleCard">{coast}p. </div>
       </div>
       {available ? (
         <div className={`buttons ${isHovered ? 'hovered' : ''}`}>

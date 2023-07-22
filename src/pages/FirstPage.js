@@ -1,3 +1,5 @@
+import { cards, firstcards } from "../helpers/shopCardsList";
+import ShopCard from "../components/shopCard/Shopcard";
 
 const FirstPage = () => {
     return ( 
@@ -17,22 +19,9 @@ const FirstPage = () => {
 
               {/* <!-- 4 карточки товара в ряд начало --> */}
               <div className="wrapper_grid4">
-                  <div className="rectangle">
-                      <p className="top-text">collection</p>
-                      <p className="bottom-text">&lt;name &amp; style&gt;</p>
-                  </div>
-                  <div className="rectangle">
-                      <p className="top-text">collection</p>
-                      <p className="bottom-text">&lt;name &amp; style&gt;</p>
-                  </div>
-                  <div className="rectangle">
-                      <p className="top-text">collection</p>
-                      <p className="bottom-text">&lt;name &amp; style&gt;</p>
-                  </div>
-                  <div className="rectangle">
-                      <p className="top-text">collection</p>
-                      <p className="bottom-text">&lt;name &amp; style&gt;</p>
-                  </div>
+                    {firstcards.map((shopcard)=>{
+                        return (<ShopCard key={shopcard.id} coast={shopcard.coast} title={shopcard.title} collection={shopcard.collection} style={shopcard.style} available={shopcard.available} />)
+                    })}
               </div>
               {/* <!-- 4 карточки товара в ряд конец --> */}
 

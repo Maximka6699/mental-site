@@ -1,0 +1,66 @@
+/* Стили для попапа */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение на 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+  }
+
+.popup-window{
+
+}
+  
+  .popup-content {
+    width: 1160px;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 65vh;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  .close-btn {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .header_link{
+    font-family: Neue Machina;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    color: #202020; /* Цвет текста ссылки */
+    text-decoration: none;
+}
+/* это стили при наведении, фокусе и клике 
+анимация подчеркивания кароче. да я это сделал*/
+.header_link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Выставляем подчеркивание на расстояние от текста (можно настроить по вашему усмотрению) */
+    width: 100%;
+    height: 2px; /* Толщина подчеркивания (можно настроить по вашему усмотрению) */
+    background-color: #202020; /* Цвет подчеркивания */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; /* Плавная анимация исчезновения */
+  }
+  
+  /* Анимация при наведении курсора */
+  .header_link:hover::before {
+    transform: scaleX(1);
+}  

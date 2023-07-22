@@ -14,13 +14,25 @@ body{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    min-height: 100vh;
 }
+
+#root{
+  min-height: 100vh;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 img{
     max-width: 100%;
     height: auto;
 }
 
-/*СТИЛИ ХЭДЭРА НАЧАЛО*/
+
 
 .wrapper{
     max-width: 1160px;
@@ -40,9 +52,64 @@ img{
   gap: 40px;
 }
 
-.obj-margin-t{
-  margin-top: 25px;
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
 }
+
+.squad{
+  width: 575px;
+  height: 575px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  position: relative;
+}
+.squad-text-top{
+  position: absolute;
+  top: 0;
+  padding: 5px 20px;
+  width: 535px;
+  color: #202020;
+  text-align: left;
+  font-family: 'Neue Machina';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.squad-text-bottom{
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 535px;
+  color: #202020;
+  text-align: left;
+  font-family: 'Neue Machina';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
+
+
+.obj-margin-t{
+  margin-top: 160px;
+}
+
+.obj-margin-mi{
+  margin-bottom: 60px;
+}
+
+.obj-margin-min{
+  margin-bottom: -20vh;
+}
+
+
+/*СТИЛИ ХЭДЭРА НАЧАЛО*/
 
 /* .header{
     background-color: rgb(255, 255, 255);
@@ -93,7 +160,8 @@ img{
 .intro{
     /* height: 1080;
     width:100vh; */
-    min-height: 100vh;
+    /* height: 200px; */
+    height: auto;
     min-width: 100vh;
     padding-top: 292px;
     /* padding-left: 622px; */
@@ -105,12 +173,27 @@ img{
     font-family: 'Neue Machina';
     font-size: 96px;
     font-weight: bold;
-    height: 68px;
-    width: 676px; 
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    /* height: 68px;
+    width: 676px;  */
+}
+.titleM{ 
+  color: #202020;
+  font-family: 'Neue Machina';
+  font-size: 64px;
+  font-weight: bold;
+  width: 1160px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.titleMM{ 
+  color: #202020;
+  font-family: 'Neue Machina';
+  font-size: 64px;
+  font-weight: bold;
+  width: 1160px;
+  margin: 100px auto;
+  text-align: center;
 }
 
 .subtitle{
@@ -121,7 +204,7 @@ img{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 50px;
+    margin-top: -25px;
 }
 
 .wrapper_grid4 {

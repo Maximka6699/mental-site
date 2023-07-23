@@ -23,20 +23,20 @@ const ShopCard = ({ title, collection, style, available, coast }) => {
         <div className="titleCard">{title} | {style} style </div>
         <div className="titleCard">{coast}p. </div>
       </div>
-      {available ? (
-        <div className={`buttons ${isHovered ? 'hovered' : ''}`}>
-          <button className="add-to-cart">+ в корзину</button>
-          <button className="add-to-favorites"> &lt;3
-            {/* <span role="img" aria-label="favorites">
-              ❤️
-            </span> */}
-          </button>
-        </div>
-      ) : (
-        <div className={`not-available ${isHovered ? 'hovered' : ''}`}>
-          Нет в наличии
-        </div>
-      )}
+        {available ? (
+          <div className={`buttons ${isHovered ? 'hovered' : ''}`}>
+            <button className="add-to-cart"><span>+ в корзину</span></button>
+            <button className="add-to-favorites"> &lt;3
+              {/* <span role="img" aria-label="favorites">
+                ❤️
+              </span> */}
+            </button>
+          </div>
+        ) : (
+          <div className={`not-available ${isHovered ? 'hovered' : ''}`}>
+            <div className="not-available-btn">+ в лист ожидания</div>
+          </div>
+        )}
     </div>
   );
 };

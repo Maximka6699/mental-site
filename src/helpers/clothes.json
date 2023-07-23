@@ -1,0 +1,227 @@
+[
+    {
+        "title": "mental",
+        "style": "street",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 1,
+        "coast": "15000"
+    },
+    {
+        "title": "go ahead",
+        "style": "street",
+        "collection": "mental health",
+        "available": false,
+        "img": "card001",
+        "id": 2,
+        "coast": "5000"
+    },
+    {
+        "title": "drugs and u",
+        "style": "street",
+        "collection": "autumn breath",
+        "available": true,
+        "img": "card001",
+        "id": 3,
+        "coast": "7500"
+    },
+    {
+        "title": "gear5",
+        "style": "home",
+        "collection": "autumn breath",
+        "available": true,
+        "img": "card001",
+        "id": 4,
+        "coast": "6000"
+    },
+    {
+        "title": "dodjo",
+        "style": "home",
+        "collection": "autumn breath",
+        "available": true,
+        "img": "card001",
+        "id": 5,
+        "coast": "9000"
+    },
+    {
+        "title": "white list",
+        "style": "home",
+        "collection": "autumn breath",
+        "available": true,
+        "img": "card001",
+        "id": 6,
+        "coast": "10000"
+    },
+    {
+        "title": "doom around",
+        "style": "street",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 7,
+        "coast": "5000"
+    },
+    {
+        "title": "stone heart",
+        "style": "acc",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 8,
+        "coast": "2500"
+    },
+    {
+        "title": "opium mask",
+        "style": "street",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 9,
+        "coast": "3500"
+    },
+    {
+        "title": "fAktS",
+        "style": "street",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 10,
+        "coast": "10000"
+    },
+    {
+        "title": "myhardlife",
+        "style": "home",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 11,
+        "coast": "7000"
+    },
+    {
+        "title": "gen1",
+        "style": "street",
+        "collection": "mental health",
+        "available": false,
+        "img": "card001",
+        "id": 12,
+        "coast": "5000"
+    },
+    {
+        "title": "hotvrot",
+        "style": "street",
+        "collection": "hot winter",
+        "available": false,
+        "img": "card001",
+        "id": 13,
+        "coast": "15000"
+    },
+    {
+        "title": "leaf of live",
+        "style": "acc",
+        "collection": "autumn breath",
+        "available": true,
+        "img": "card001",
+        "id": 14,
+        "coast": "5000"
+    },
+    {
+        "title": "wTf again",
+        "style": "street",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 15,
+        "coast": "15000"
+    },
+    {
+        "title": "whoisthis",
+        "style": "acc",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 16,
+        "coast": "3000"
+    },
+    {
+        "title": "geniusForever",
+        "style": "acc",
+        "collection": "mental health",
+        "available": false,
+        "img": "card001",
+        "id": 17,
+        "coast": "6000"
+    },
+    {
+        "title": "glassInAss",
+        "style": "acc",
+        "collection": "mental health",
+        "available": false,
+        "img": "card001",
+        "id": 18,
+        "coast": "8000"
+    },
+    {
+        "title": "mental box",
+        "style": "secret",
+        "collection": "secret",
+        "available": true,
+        "img": "card001",
+        "id": 19,
+        "coast": "15000"
+    },
+    {
+        "title": "wildWind",
+        "style": "home",
+        "collection": "autumn breath",
+        "available": false,
+        "img": "card001",
+        "id": 20,
+        "coast": "15000"
+    },
+    {
+        "title": "mental health",
+        "style": "acc",
+        "collection": "mental health",
+        "available": false,
+        "img": "card001",
+        "id": 21,
+        "coast": "15000"
+    },
+    {
+        "title": "juj",
+        "style": "acc",
+        "collection": "mental health",
+        "available": false,
+        "img": "card001",
+        "id": 22,
+        "coast": "4000"
+    },
+    {
+        "title": "hahaha",
+        "style": "street",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 23,
+        "coast": "8000"
+    },
+    {
+        "title": "meeeen",
+        "style": "street",
+        "collection": "mental health",
+        "available": true,
+        "img": "card001",
+        "id": 24,
+        "coast": "11000"
+    },
+    {
+        "title": "god spike",
+        "style": "home",
+        "collection": "hot winter",
+        "available": false,
+        "img": "card001",
+        "id": 25,
+        "coast": "7000"
+    }
+]

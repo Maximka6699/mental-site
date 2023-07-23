@@ -1,7 +1,10 @@
+import Filter from "../components/Filter/Filter";
 import ShopCard from "../components/shopCard/Shopcard";
 import { cards } from "../helpers/shopCardsList";
+import React from "react";
 
-const Shop = () => {
+const Shop = ({item}) => {
+
     return ( 
         <main className="main">
             <div className="wrapper">
@@ -12,10 +15,12 @@ const Shop = () => {
                           <p className="description">новая коллекция прямо из самых темных мест твоего сознания</p>                      </div>
                 </div>
 
+                <Filter/>
+
                 <div className="grid-container">
                     {/* <!-- Ваши карточки товаров, например: --> */}
-                    {cards.map((shopcard)=>{
-                        return (<ShopCard key={shopcard.id} coast={shopcard.coast} title={shopcard.title} collection={shopcard.collection} style={shopcard.style} available={shopcard.available} />)
+                    {item.map((shopcard)=>{
+                        return (<ShopCard key={shopcard.id} {... shopcard}/>)
                     })}
                     
                     {/* <!-- ... Добавьте карточки товаров по необходимости ... --> */}

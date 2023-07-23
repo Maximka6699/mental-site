@@ -1,11 +1,18 @@
 .footer {
     background-color: #202020; /* Цвет фона футера */
-    padding: 40px;
-    display: grid;
-    grid-template-columns: auto auto auto auto; /* 4 колонки равной ширины */
-    gap: 60px; /* Отступ между колонками */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 120px;
   }
+
+.footer-wrapper{
+  width: 1160px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto auto; /* 4 колонки равной ширины */
+  gap: 60px; /* Отступ между колонками */
+}
 
   .column {
     color: #fff; /* Цвет текста */

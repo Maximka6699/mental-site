@@ -1,7 +1,9 @@
 import { cards, firstcards } from "../helpers/shopCardsList";
 import ShopCard from "../components/shopCard/Shopcard";
+import React from "react";
 
-const FirstPage = () => {
+const FirstPage = ({item}) => {
+    
     return ( 
         <main className="main">
           <section className="intro">
@@ -19,8 +21,8 @@ const FirstPage = () => {
 
               {/* <!-- 4 карточки товара в ряд начало --> */}
               <div className="wrapper_grid4">
-                    {firstcards.map((shopcard)=>{
-                        return (<ShopCard key={shopcard.id} coast={shopcard.coast} title={shopcard.title} collection={shopcard.collection} style={shopcard.style} available={shopcard.available} />)
+                    {item.slice(0,4).map((shopcard)=>{
+                        return (<ShopCard key={shopcard.id} {... shopcard} />)
                     })}
               </div>
               {/* <!-- 4 карточки товара в ряд конец --> */}
@@ -63,15 +65,15 @@ const FirstPage = () => {
                   </h1>
                   <div className="wrapper_grid2v">
                       <div className="big_rect">
-                          <h1 className="block_name">&lt;mental health&gt;</h1>
+                          <h1 className="block_name">&lt;о бренде&gt;</h1>
                           <div className="link_cont_center">
-                              <a href="#!" className="smooth-underline">перейти в раздел</a>
+                              <a href="/about" className="smooth-underline">перейти в раздел</a>
                           </div>
                       </div>
                       <div className="big_rect">
-                          <h1 className="block_name">&lt;mental health&gt;</h1>
+                          <h1 className="block_name">&lt;доставка&gt;</h1>
                           <div className="link_cont_center">
-                              <a href="#!" className="smooth-underline">перейти в раздел</a>
+                              <a href="/delivery" className="smooth-underline">перейти в раздел</a>
                           </div>
                       </div>
                   </div>

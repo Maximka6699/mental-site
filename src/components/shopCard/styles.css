@@ -74,6 +74,7 @@
     border: none;
     border-radius: 5px;
     text-align: center;
+    align-items: center;
     font-family: 'Neue Machina';
     font-size: 16px;
     font-style: normal;
@@ -85,6 +86,15 @@
   .add-to-cart{
     width: 160px;
     height: 40px;
+    position: relative;
+  }
+  .add-to-cart span{
+    top: 7px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
   }
   .add-to-favorites{
     width: 40px;
@@ -129,3 +139,6 @@
     opacity: 1;
   }
   
+  .not-available-btn{
+    margin-top: 7px;
+  }

@@ -319,19 +319,6 @@ img{
     fill: #fff;
   }
   
-  /* h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 5px;
-  } */
   .footer-text-b{
     color: #FFF;
     leading-trim: both;
@@ -378,3 +365,101 @@ img{
   }
 
   
+
+  /* СТИЛИ ДЛЯ ФИЛЬТРАЦИИ НАЧАЛО */
+
+.filter{
+  width: 1160px;
+  /* height: 500px; */
+  /* max-height: 500px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.filter-content{
+  width: 1160px;
+  margin: 40px auto 20px;
+  height: 100px;
+  overflow: hidden; /* Это скроет контент, выходящий за пределы блока */
+  transition: height 1s;
+}
+
+.filter-content.expanded{
+  height: auto;
+}
+
+.filter-wrapper{
+  background-color: #FFF;
+  border-radius: 10px;
+  width: 1160px;
+  height: 100px;
+}
+
+.filter-txt{
+  /* padding-top: 30px; */
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.filter-btn{
+  color: #202020;
+  font-family: Neue Machina;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500; 
+  padding: 35px;
+}
+
+.op05{
+  opacity: 0.8;
+}
+
+.filter-body{
+  background-color: #FFF;
+  border-radius: 10px;
+  width: 1160px;
+  height: auto;
+}
+.filter-section{
+  width: 1040px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 20px;
+  gap: 20px;
+}
+
+.filter-title-type{
+  color: #202020;
+  font-family: Neue Machina;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 30px auto 0px;
+}
+
+.filter-title-type-s{
+  color: #202020;
+  font-family: Neue Machina;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.filter-type{
+  display: flex;
+  width: 1040px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 40px 60px;
+  flex-wrap: wrap;
+}
+
+
+
+    /* СТИЛИ ДЛЯ ФИЛЬТРАЦИИ КОНЕЦ */

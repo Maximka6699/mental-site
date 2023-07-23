@@ -111,19 +111,6 @@ img{
 
 /*СТИЛИ ХЭДЭРА НАЧАЛО*/
 
-/* .header{
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1160px;
-    height: 100px;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 48px rgba(91, 91, 91, 0.07));
-    z-index: 1;
-} */
-
 .header_link{
     font-family: Neue Machina;
     font-size: 24px;
@@ -158,14 +145,9 @@ img{
 /*ПЕРВЫЙ ЭКРАН НАЧАЛО*/
 
 .intro{
-    /* height: 1080;
-    width:100vh; */
-    /* height: 200px; */
     height: auto;
     min-width: 100vh;
     padding-top: 292px;
-    /* padding-left: 622px; */
-    /* background: #DAE7FA; */
 }
 
 .title{
@@ -173,8 +155,6 @@ img{
     font-family: 'Neue Machina';
     font-size: 96px;
     font-weight: bold;
-    /* height: 68px;
-    width: 676px;  */
 }
 .titleM{ 
   color: #202020;
@@ -363,11 +343,3 @@ img{
     position: absolute;
     bottom: 60px;
 }
-
-
-
-
-/* FOOTER START */
-  
-
-  /* FOOTER END */

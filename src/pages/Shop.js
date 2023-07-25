@@ -3,7 +3,7 @@ import ShopCard from "../components/shopCard/Shopcard";
 import { cards } from "../helpers/shopCardsList";
 import React from "react";
 
-const Shop = ({item}) => {
+const Shop = ({item, type, onClickType, avi, onClickAvi, size, onClickSize, collection, onClickCol}) => {
 
     return ( 
         <main className="main">
@@ -15,7 +15,16 @@ const Shop = ({item}) => {
                           <p className="description">новая коллекция прямо из самых темных мест твоего сознания</p>                      </div>
                 </div>
 
-                <Filter/>
+                <Filter 
+                    type={type}
+                    onClickType = {onClickType}
+                    avi={avi}
+                    onClickAvi = {onClickAvi}
+                    size={size}
+                    onClickSize = {onClickSize}
+                    collection={collection}
+                    onClickCol = {onClickCol}
+                />
 
                 <div className="grid-container">
                     {/* <!-- Ваши карточки товаров, например: --> */}

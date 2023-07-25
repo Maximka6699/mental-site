@@ -2,7 +2,16 @@ import { cards, firstcards } from "../helpers/shopCardsList";
 import ShopCard from "../components/shopCard/Shopcard";
 import React from "react";
 
-const FirstPage = ({item}) => {
+const FirstPage = () => {
+
+    const [clothes, setClothes] = React.useState([])
+
+    React.useEffect(()=>{
+      fetch('https://64bd46e92320b36433c78fb7.mockapi.io/clothes')
+      .then((res)=> { return res.json(); })
+      .then((arr)=>{ setClothes(arr); });
+    }, []);
+
     
     return ( 
         <main className="main">
@@ -21,7 +30,7 @@ const FirstPage = ({item}) => {
 
               {/* <!-- 4 карточки товара в ряд начало --> */}
               <div className="wrapper_grid4">
-                    {item.slice(0,4).map((shopcard)=>{
+                    {clothes.slice(0,4).map((shopcard)=>{
                         return (<ShopCard key={shopcard.id} {... shopcard} />)
                     })}
               </div>

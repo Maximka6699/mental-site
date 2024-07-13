@@ -2,9 +2,10 @@
 
 # dependencies
 /node_modules
+/mental-site/node_modules
 /.pnp
 .pnp.js
-
+/первая учебная практика
 # testing
 /coverage
 

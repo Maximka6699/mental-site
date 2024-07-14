@@ -19,8 +19,8 @@
 
 .cart-base-rect {
     background-color: white;
-    width: 45vh;
-    height: 100vh;
+    width: 35%;
+    height: 100%;
     top: 0;
     right: 0;
     position: absolute;
@@ -94,16 +94,16 @@
 .alin {}
 
 .items-list {
-    width: 350px;
-    /* Контейнер будет автоматически расширяться до размера своего содержимого */
-    /* Но не будет превышать 100% ширины родительского элемента */
-    height: 450px;
-    /* Фиксированная высота контейнера */
+    width: 100%;
+    /* Изменено с 125% на 100% для лучшей вёрстки */
+    max-height: 400px;
+    /* Установим максимальную высоту контейнера */
     overflow-y: auto;
-    /* Включение вертикальной прокрутки, когда контент выходит за пределы контейнера */
-    display: flex;
-    flex-direction: column;
+    /* Включаем вертикальную прокрутку */
+    display: grid;
     gap: 2rem;
+    scrollbar-width: none;
+    justify-content: center;
 }
 
 /* СТИЛИ ДЛЯ ПОЯВЛЕНИЯ ОТДЕЛА С ФИЛЬТРАМИ НАЧАЛО */

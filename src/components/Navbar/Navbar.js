@@ -7,8 +7,11 @@ import Dropdown from 'react-dropdown';
 import '../Navbar/navstyle.css';
 import Popup from '../popup/Popup';
 import { NavLink } from 'react-router-dom';
+import { cartContext } from '../../App';
 
 function Navbar() {
+  const { isModalOpen, closeModal, openModal } = React.useContext(cartContext);
+
   const activeLink = 'header_link_active';
   const pasiveLink = 'header_link';
 
@@ -92,9 +95,9 @@ function Navbar() {
               <img src={IconHeart} alt="shopping cart" className="" />
             </NavLink>
 
-            <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : pasiveLink)}>
+            <nav className={pasiveLink} onClick={openModal}>
               <img src={IconBag} alt="shopping cart" className="" />
-            </NavLink>
+            </nav>
           </div>
 
           {/* <div className="header_burger header_item">

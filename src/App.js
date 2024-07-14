@@ -88,12 +88,31 @@ function App() {
     );
   };
 
+  const [shopingCart, setShopingCart] = useState([]);
+  const toggleShopingCart = (productId) => {
+    setShopingCart((prevShopingCart) =>
+      prevShopingCart.includes(productId)
+        ? prevShopingCart.filter((id) => id !== productId)
+        : [...prevShopingCart, productId],
+    );
+  };
+
   return (
     <div className="App">
       <Router>
-        <Navbar />
-        <ScrollToTop />
-        <cartContext.Provider value={{ isModalOpen, openModal, closeModal }}>
+        <cartContext.Provider
+          value={{
+            clothes,
+            favorites,
+            toggleFavorite,
+            shopingCart,
+            toggleShopingCart,
+            isModalOpen,
+            openModal,
+            closeModal,
+          }}>
+          <Navbar />
+          <ScrollToTop />
           <Navbar />
           <Cart_Slider />
         </cartContext.Provider>
@@ -114,6 +133,8 @@ function App() {
                 item={clothes}
                 favorites={favorites}
                 toggleFavorite={toggleFavorite}
+                shopingCart={shopingCart}
+                toggleShopingCart={toggleShopingCart}
               />
             }
           />

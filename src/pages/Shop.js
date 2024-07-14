@@ -15,6 +15,8 @@ const Shop = ({
   onClickCol,
   favorites,
   toggleFavorite,
+  shopingCart,
+  toggleShopingCart,
 }) => {
   return (
     <main className="main">
@@ -47,6 +49,8 @@ const Shop = ({
                 key={shopcard.id}
                 isFavorite={favorites.includes(shopcard.objectID)}
                 onToggleFavorite={() => toggleFavorite(shopcard.objectID)}
+                isInShopingCart={shopingCart.includes(shopcard.objectID)}
+                onToggleShopingCart={() => toggleShopingCart(shopcard.objectID)}
                 {...shopcard}
               />
             );

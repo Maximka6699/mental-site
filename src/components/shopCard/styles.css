@@ -19,7 +19,6 @@
   width: 260px;
   height: 400px;
   border-radius: 10px;
-  /* background-image: url("https://monochrome.ru/uploads/thumbs/hudi-2149303c4e-487787527573eb8d3e100d18d173ceae.png"); */
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -28,17 +27,31 @@
   overflow: hidden;
 }
 
+.buy-card {
+  position: relative;
+  width: 260px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+  /* filter: drop-shadow(0px 0px 48px rgba(91, 91, 91, 0.07)); */
+  overflow: hidden;
+}
+
 
 .collection,
 .product-info {
   position: absolute;
-  color: #202020;
+  color: #ffffff;
   text-align: center;
   font-family: 'Neue Machina';
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  mix-blend-mode: difference;
 }
 
 .collection {
@@ -61,6 +74,10 @@
   transform: translateY(-45px);
 }
 
+.buy-card:hover .titleCard {
+  transform: translateY(-45px);
+}
+
 /* Стили для кнопок при наличии товара */
 .buttons {
   position: absolute;
@@ -80,6 +97,7 @@
 }
 
 .add-to-cart,
+.add-to-cart1,
 .add-to-favorites,
 .add-to-favorites1 {
   border: none;
@@ -95,13 +113,15 @@
   padding: 0;
 }
 
-.add-to-cart {
+.add-to-cart,
+.add-to-cart1 {
   width: 160px;
   height: 40px;
   position: relative;
 }
 
-.add-to-cart span {
+.add-to-cart span,
+.add-to-cart1 span {
   top: 7px;
   left: 0px;
   right: 0px;
@@ -120,12 +140,20 @@
   background-color: #202020;
 }
 
+.add-to-cart1 {
+  background-color: #ffffff;
+  color: #202020;
+  border: 0.1rem solid #202020;
+
+}
+
 .add-to-favorites {
   background-color: #202020;
 }
 
 .add-to-favorites1 {
   background-color: #ffffff;
+  border: 0.1rem solid #202020;
 }
 
 .add-to-favorites:hover,
@@ -134,7 +162,8 @@
   transition: transform 0.3s;
 }
 
-.add-to-cart:hover {
+.add-to-cart:hover,
+.add-to-cart1:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
 }

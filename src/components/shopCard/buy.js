@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './styles.css'; // Подключите стили для карточки
 const placeholderImg =
   'https://static.vecteezy.com/system/resources/previews/015/434/998/original/pixel-cat-in-christmas-sweater-new-year-cute-cartoon-cat-in-knitted-sweater-pixel-art-8-bit-cartoon-character-vector.jpg';
-const ShopCard = ({
+const BuyCard = ({
   title,
   collection,
   style,
@@ -25,7 +25,7 @@ const ShopCard = ({
   };
 
   return (
-    <div className="product-card" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div className="buy-card" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <img src={img || placeholderImg} className="product-image" />
       <div className="collection">{collection}</div>
       <div className="product-info">
@@ -60,4 +60,4 @@ const ShopCard = ({
   );
 };
 
-export default ShopCard;
+export default BuyCard;

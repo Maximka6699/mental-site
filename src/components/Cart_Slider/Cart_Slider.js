@@ -5,6 +5,7 @@ import BuyCard from '../shopCard/buy';
 import CSSTransition from 'react-transition-group/CSSTransition';
 import React from 'react';
 import { cartContext } from '../../App';
+import { NavLink } from 'react-router-dom';
 
 const Cart_Slider = () => {
   const {
@@ -86,7 +87,12 @@ const Cart_Slider = () => {
                     <div className="alin">Всего:</div>
                     <div className="alin">{totalCoast} p.</div>
                   </div>
-                  <button className="big-btn">&lt;оформить заказ&gt;</button>
+
+                  <>
+                    <NavLink to="/order" className="big-btn" onClick={handleButtonClick}>
+                      &lt;оформить заказ&gt;
+                    </NavLink>
+                  </>
                 </div>
               </div>
             </div>

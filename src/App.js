@@ -7,6 +7,7 @@ import FirstPage from './pages/FirstPage';
 import Shop from './pages/Shop';
 import About from './pages/About';
 import Collections from './pages/Collections';
+import OrderForm from './pages/OrderForm';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './utils/ScrolToTop';
@@ -117,7 +118,18 @@ function App() {
           <Cart_Slider />
         </cartContext.Provider>
         <Routes>
-          <Route path="/" element={<FirstPage />} />
+          <Route
+            path="/"
+            element={
+              <FirstPage
+                productsi={clothes}
+                favorites={favorites}
+                toggleFavorite={toggleFavorite}
+                shopingCart={shopingCart}
+                toggleShopingCart={toggleShopingCart}
+              />
+            }
+          />
           <Route
             path="/shop"
             element={
@@ -144,7 +156,25 @@ function App() {
           <Route
             path="/favorites"
             element={
-              <Favorites products={clothes} favorites={favorites} toggleFavorite={toggleFavorite} />
+              <Favorites
+                products={clothes}
+                favorites={favorites}
+                toggleFavorite={toggleFavorite}
+                shopingCart={shopingCart}
+                toggleShopingCart={toggleShopingCart}
+              />
+            }
+          />
+          <Route
+            path="/order"
+            element={
+              <OrderForm
+                products={clothes}
+                favorites={favorites}
+                toggleFavorite={toggleFavorite}
+                shopingCart={shopingCart}
+                toggleShopingCart={toggleShopingCart}
+              />
             }
           />
         </Routes>

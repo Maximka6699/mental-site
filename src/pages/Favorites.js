@@ -1,5 +1,5 @@
 import ShopCard from '../components/shopCard/Shopcard';
-const Favorites = ({ products, favorites, toggleFavorite }) => {
+const Favorites = ({ products, favorites, toggleFavorite, shopingCart, toggleShopingCart }) => {
   const favoriteProducts = products.filter((product) => favorites.includes(product.objectID));
 
   return (
@@ -21,6 +21,8 @@ const Favorites = ({ products, favorites, toggleFavorite }) => {
                     product={product}
                     isFavorite={favorites.includes(product.objectID)}
                     onToggleFavorite={() => toggleFavorite(product.objectID)}
+                    isInShopingCart={shopingCart.includes(product.objectID)}
+                    onToggleShopingCart={() => toggleShopingCart(product.objectID)}
                     {...product}
                   />
                 );

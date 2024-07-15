@@ -2,22 +2,7 @@ import ShopCard from '../components/shopCard/Shopcard';
 import React from 'react';
 import index from '../helpers/algoliaSearsh';
 
-const FirstPage = () => {
-  const [products, setProducts] = React.useState([]);
-
-  React.useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const { hits } = await index.search('');
-        setProducts(hits);
-      } catch (error) {
-        console.error('Ошибка при получении данных из Algolia:', error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
-
+const FirstPage = ({ productsi, favorites, toggleFavorite, shopingCart, toggleShopingCart }) => {
   return (
     <main className="main">
       <section className="intro">
@@ -30,8 +15,17 @@ const FirstPage = () => {
 
         {/* <!-- 4 карточки товара в ряд начало --> */}
         <div className="wrapper_grid4">
-          {products.slice(0, 4).map((shopcard) => {
-            return <ShopCard key={shopcard.id} {...shopcard} />;
+          {productsi.slice(0, 4).map((shopcard) => {
+            return (
+              <ShopCard
+                key={shopcard.id}
+                isFavorite={favorites.includes(shopcard.objectID)}
+                onToggleFavorite={() => toggleFavorite(shopcard.objectID)}
+                isInShopingCart={shopingCart.includes(shopcard.objectID)}
+                onToggleShopingCart={() => toggleShopingCart(shopcard.objectID)}
+                {...shopcard}
+              />
+            );
           })}
         </div>
         {/* <!-- 4 карточки товара в ряд конец --> */}

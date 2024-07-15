@@ -1,4 +1,3 @@
-// algoliaClient.js
 import algoliasearch from 'algoliasearch/lite';
 
 const appId = 'AQCFIGANQA';
